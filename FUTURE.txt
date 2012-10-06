@@ -1,0 +1,20 @@
+Some random ideas for future improvements.
+
+---
+
+You could try extending this to other mutually exclusive markets.
+There are a number of them on intrade.
+
+I'm not sure what you do if the prices sum to > 1 but you can't
+short them all, because some of these really low-odds markets
+(e.g. for presidential contenders who have officially withdrawn
+from the race) don't have any buyers at $0.01/share.
+Options include:
+- Don't try anything
+- Short all the ones you can, and leave out the ones with no buyers. (This seems risky in general.)
+- Manually mark some of the contracts as "effectively 0". (You can get the same effect by removing some of the contracts from your list of possibilities.) In the rare event that one of those comes to pass, you lose. But if you're right that it doesn't happen, you will win. Might be acceptable.
+
+Note that if you find any *subset* of mutually exclusive contracts
+that sum to > 1.0, you should short them all?
+- That might be smart in some cases, but you're arbitrage is no longer a *guaranteed* success
+
